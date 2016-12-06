@@ -10,31 +10,31 @@ source:
   sha256: 9e1f3282d3210581d9b5f62c3105b384f4e238ad3df899dcfd83b86e48b63e21  # [not win]
 
   fn: otlhs-{{ version }}-py2.7-i686.exe  # [win32 and py27]
-  url: https://github.com/openturns/build/releases/download/v1.8rc1/otlhs-{{ version }}-py2.7-i686.exe  # [win32 and py27]
-  sha256: 1b0db8976b58db7c120fa418f306416a419dc918559ecdac04be8386d23eceb2  # [win32 and py27]
+  url: https://github.com/openturns/build/releases/download/v1.8/otlhs-{{ version }}-py2.7-i686.exe  # [win32 and py27]
+  sha256: dd06dc0fc160bcdd826f1f1001b49f36cba43d67e22c432e3b7e9fb5b6d0d76b  # [win32 and py27]
 
   fn: otlhs-{{ version }}-py2.7-x86_64.exe  # [win64 and py27]
-  url: https://github.com/openturns/build/releases/download/v1.8rc1/otlhs-{{ version }}-py2.7-x86_64.exe  # [win64 and py27]
-  sha256: 1988ea3048faaf9862ffac7b0378c86764e424ec7ae91e5b676b5ec467f608a8  # [win64 and py27]
+  url: https://github.com/openturns/build/releases/download/v1.8/otlhs-{{ version }}-py2.7-x86_64.exe  # [win64 and py27]
+  sha256: 2dcc065b6798ef6d01360e12bf7b44e902973425052531816213a512c1a0ffcf  # [win64 and py27]
 
   fn: otlhs-{{ version }}-py3.4-i686.exe  # [win32 and py34]
-  url: https://github.com/openturns/build/releases/download/v1.8rc1/otlhs-{{ version }}-py3.4-i686.exe  # [win32 and py34]
-  sha256: f4b366416601e91b25b32dd2723e7c922caf30568ef68245fa5c97855eb5ae97  # [win32 and py34]
+  url: https://github.com/openturns/build/releases/download/v1.8/otlhs-{{ version }}-py3.4-i686.exe  # [win32 and py34]
+  sha256: d1613e14d593f3ff3762a3a717765df9ac28571e8d2d95d37e779ef9279553ac  # [win32 and py34]
 
   fn: otlhs-{{ version }}-py3.4-x86_64.exe  # [win64 and py34]
-  url: https://github.com/openturns/build/releases/download/v1.8rc1/otlhs-{{ version }}-py3.4-x86_64.exe  # [win64 and py34]
-  sha256: 09374d0e63ecbf33a22df35dd8896d3b9669987e7612693ec3f41c7f90e704af  # [win64 and py34]
+  url: https://github.com/openturns/build/releases/download/v1.8/otlhs-{{ version }}-py3.4-x86_64.exe  # [win64 and py34]
+  sha256: baf0ff915be93c091388ae2974f4ab4a8062f0aac7143910af939d054d6af666  # [win64 and py34]
 
   fn: otlhs-{{ version }}-py3.5-i686.exe  # [win32 and py35]
-  url: https://github.com/openturns/build/releases/download/v1.8rc1/otlhs-{{ version }}-py3.5-i686.exe  # [win32 and py35]
-  sha256: f761247c699e893d792d7eafbc1341fd022c081344cdd470f4867e6e7f03c77b  # [win32 and py35]
+  url: https://github.com/openturns/build/releases/download/v1.8/otlhs-{{ version }}-py3.5-i686.exe  # [win32 and py35]
+  sha256: 4f587422b93d255a83e145ec0c1798ace2ae63defb338ca7a194257b1b2cee35  # [win32 and py35]
 
   fn: otlhs-{{ version }}-py3.5-x86_64.exe  # [win64 and py35]
-  url: https://github.com/openturns/build/releases/download/v1.8rc1/otlhs-{{ version }}-py3.5-x86_64.exe  # [win64 and py35]
-  sha256: ebbb44ef635bcaa84e3ec52cce1059265d5ff20760764986573cc9722266d105  # [win64 and py35]
+  url: https://github.com/openturns/build/releases/download/v1.8/otlhs-{{ version }}-py3.5-x86_64.exe  # [win64 and py35]
+  sha256: 8a398b641372b1e3c7c3a971bdc7d0697d5d738e46b5e3346e9840d9b3ca454a  # [win64 and py35]
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -54,14 +54,10 @@ test:
 
 about:
   home: http://openturns.org/
-  dev_url: https://github.com/openturns/otlhs
   license: LGPLv3
+  license_file: COPYING.LESSER  # [not win]
   summary: Optimized LHS module
-  description: |
-    LHS module for OpenTURNS
-    It provides optimized latin hypercube experiments
 
 extra:
   recipe-maintainers:
     - jschueller
-
